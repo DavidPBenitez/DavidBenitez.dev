@@ -1,4 +1,3 @@
-import './App.css'
 import { useState } from 'react'
 
 function App() {
@@ -14,10 +13,10 @@ function App() {
 
   return (
     <>
-      {/* Navigation */}
+      {/* Nav */}
       <nav className="header-nav">
         <div className="nav-container">
-          <h1 className="nav-title">DavidBenitez.dev</h1>
+          <span className="nav-title">DavidBenitez.dev</span>
           <ul className="nav-links">
             <li>
               <button 
@@ -42,10 +41,10 @@ function App() {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="hero">
         <h1>David P. Benitez</h1>
-        <p className="subtitle">.NET Developer</p>
+        <p className="subtitle">.Net Utvecklare</p>
       </section>
 
       {/* about */}
@@ -87,7 +86,17 @@ function App() {
           <div className="tech-item">
             <span><i className="devicon-css3-plain colored"></i></span>
           </div>
-</div>
+
+          <div className="tech-item">
+            <span><i className="devicon-docker-plain colored"></i></span>
+          </div>
+
+          <div className="tech-item">
+            <span><i className="devicon-microsoftsqlserver-plain colored"></i></span>
+          </div>
+
+          </div>
+
         </section>
       )}
 
@@ -100,13 +109,13 @@ function App() {
             <div className="project-card">
               <h3>RestAPI Projekt</h3>
               <p>I detta projekt byggde jag ett "Human Resources" system med hjälp av vad jag lärt mig i kursens gång.</p>
-              <a href="#" className="project-link">View Project →</a>
+              <a href="#" className="project-link">Visa projekt →</a>
             </div>
 
             <div className="project-card">
               <h3>Grupp Projekt</h3>
               <p>I detta projekt jobbade jag tillsammans med andra klasskamrater för att bygga ett bokningssytem i konsoll med hjälp av vad vi lärt oss om C#  .</p>
-              <a href="https://github.com/andersabjorn/D-Gruppuppgift-Bokningssystem" className="project-link">Projekt länk →</a>
+              <a href="https://github.com/andersabjorn/D-Gruppuppgift-Bokningssystem" className="project-link">Visa projekt →</a>
             </div>
           </div>
         </section>
@@ -115,51 +124,42 @@ function App() {
       {/* Spacer */}
       <div id="spacer"></div>
 
-      {/* Footer */}
+      { /* Footer */}
       <footer id="contact" className="footer-section">
         <h2>Kontakt</h2>
         <ul className="contact-links">
-
           <li>
             <a 
+      
               href="https://github.com/DavidPBenitez" 
               target="_blank" 
               rel="noopener noreferrer"
+              aria-label="GitHub"
             >
-              GitHub
+              <i className="fab fa-github"></i>
             </a>
           </li>
 
           <li>
-            <a 
-              href="https://www.linkedin.com/in/david-p-b51685248/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              LinkedIn
+            <a onClick={handleCopy} role="button" style={{ cursor: "pointer" }} aria-label="Kopiera email">
+              <i className="fas fa-envelope"></i>
             </a>
-          </li>
-
-          <li onClick={handleCopy} style={{ cursor: "pointer" }}>
-            <a href="mailto:davidpersson094@gmail.com">
-              davidpersson094@gmail.com
-            </a>
-
             {copied && (
-              <p 
-                style={{ 
-                  color: "green", 
-                  marginTop: "4px", 
-                  fontSize: "0.8rem", 
-                  fontFamily: "Calibri", 
-                  fontStyle: "italic" 
-                }}
-              >
-                Kopierat!
-              </p>
+              <span className="copied-text">Kopierat!</span>
             )}
           </li>
 
+          <li>
+            <a 
+      
+              href="https://www.linkedin.com/in/david-p-b51685248/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+          </li>     
         </ul>
       </footer>
     </>
