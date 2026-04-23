@@ -107,14 +107,14 @@ function App() {
 
           <div className="projects-grid">
             <div className="project-card">
-              <h3>RestAPI Projekt</h3>
-              <p>I detta projekt byggde jag ett "Human Resources" system med hjälp av vad jag lärt mig i kursens gång.</p>
-              <a href="#" className="project-link">Visa projekt →</a>
+              <h3>Alarm App, C#</h3>
+              <p>En konsolbaserad alarmapplikation som demonstrerar CRUD-operationer, JSON-lagring och clean code-principer med Repository Pattern.</p>
+              <a href="https://github.com/DavidPBenitez/AlarmApp" className="project-link">Visa projekt →</a>
             </div>
 
             <div className="project-card">
               <h3>Grupp Projekt</h3>
-              <p>I detta projekt jobbade jag tillsammans med andra klasskamrater för att bygga ett bokningssytem i konsoll med hjälp av vad vi lärt oss om C#  .</p>
+              <p>I detta projekt jobbade jag tillsammans med andra klasskamrater för att bygga ett bokningssystem i konsoll med hjälp av vad vi lärt oss i C#.</p>
               <a href="https://github.com/andersabjorn/D-Gruppuppgift-Bokningssystem" className="project-link">Visa projekt →</a>
             </div>
           </div>
