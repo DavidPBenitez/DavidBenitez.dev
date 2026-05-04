@@ -57,46 +57,59 @@ function App() {
             Jag har erfarenhet av CRUD-applikationer, webbutveckling och grundläggande JavaScript/React, samt HTML och CSS.
           </p>
 
-          <p>
-            Under min LIA vill jag växa som utvecklare, förstå hur yrket fungerar i praktiken och lära mig vad som förväntas utav mig för att bli en självgående systemutvecklare.
-          </p>
-
           {/* Tech Stack */}
         <div className="tech-stack">
+
           <div className="tech-item">
             <span><i className="devicon-dotnetcore-plain colored"></i></span>
+            <p>.Net</p>
           </div>
-        
           <div className="tech-item">
             <span><i className="devicon-csharp-plain colored"></i></span>
+              <p>C#</p>
           </div>
         
           <div className="tech-item">
             <span><i className="devicon-react-original colored"></i></span>
+            <p>React</p>
           </div>
         
           <div className="tech-item">
             <span><i className="devicon-javascript-plain colored"></i></span>
+            <p>JavaScript</p>
           </div>
         
           <div className="tech-item">
             <span><i className="devicon-html5-plain colored"></i></span>
+            <p>HTML</p>
           </div>
         
           <div className="tech-item">
             <span><i className="devicon-css3-plain colored"></i></span>
+            <p>CSS</p>
           </div>
 
           <div className="tech-item">
             <span><i className="devicon-docker-plain colored"></i></span>
+            <p>Docker</p>
           </div>
 
           <div className="tech-item">
             <span><i className="devicon-microsoftsqlserver-plain colored"></i></span>
+            <p>SQL Server</p>
+          </div>
+
+            <div className="tech-item">
+            <span><i className="devicon-vscode-plain colored"></i></span>
+            <p>VSCode</p>
+          </div>
+
+          <div className="tech-item">
+            <span><i className="devicon-visualstudio-plain colored"></i></span>
+            <p>Visual Studio</p>
           </div>
 
           </div>
-
         </section>
       )}
 
@@ -104,19 +117,44 @@ function App() {
       {view === "projects" && (
         <section className="content-section projects-section">
           <h2>Projekt</h2>
-
+          
           <div className="projects-grid">
+
             <div className="project-card">
-              <h3>Alarm App, C#</h3>
+              <h3>Battle-Simulator</h3>
+              <p>Ett turbaserat stridsystem byggt i C# som simulerar kärnmekaniken från Pokémon-spelen. Implementerar type effectiveness, stat stages, statusvillkor, skadeberäkning och Datastyrda-motståndare.</p>
+              <div className="project-tagsholder">
+                <span className="info-tag">C#</span>
+                <span className="info-tag">CRUD</span>
+                <span className="info-tag">Delegates</span>
+                <span className="info-tag">Game-logic</span>
+                <span className="info-tag">Design Patterns</span>
+            </div>
+              <a href="https://github.com/DavidPBenitez/Console-Battle-Sim-Pkmn" className="project-link">Visa projekt →</a>
+            </div>
+
+            <div className="project-card">
+              <h3>Alarm App</h3>
               <p>En konsolbaserad alarmapplikation som demonstrerar CRUD-operationer, JSON-lagring och clean code-principer med Repository Pattern.</p>
+              <div className="project-tagsholder">
+                <span className="info-tag">C#</span>
+                <span className="info-tag">CRUD</span>
+                <span className="info-tag">JSON</span>
+            </div>
               <a href="https://github.com/DavidPBenitez/AlarmApp" className="project-link">Visa projekt →</a>
             </div>
 
             <div className="project-card">
               <h3>Grupp Projekt</h3>
               <p>I detta projekt jobbade jag tillsammans med andra klasskamrater för att bygga ett bokningssystem i konsoll med hjälp av vad vi lärt oss i C#.</p>
+              <div className="project-tagsholder">
+                <span className="info-tag">C#</span>
+                <span className="info-tag">Grupparbete</span>
+                <span className="info-tag">CRUD</span>
+            </div>
               <a href="https://github.com/andersabjorn/D-Gruppuppgift-Bokningssystem" className="project-link">Visa projekt →</a>
             </div>
+            
           </div>
         </section>
       )}
@@ -151,7 +189,6 @@ function App() {
 
           <li>
             <a 
-      
               href="https://www.linkedin.com/in/david-p-b51685248/" 
               target="_blank" 
               rel="noopener noreferrer"
